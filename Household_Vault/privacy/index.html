@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Household Vault – Politika privatnosti / Privacy policy</title>
+<title>ManuSafe – Politika privatnosti / Privacy policy</title>
 <style>
 :root { color-scheme: light dark; }
 * { box-sizing: border-box; }
@@ -46,7 +46,7 @@ hr { margin: 3rem 0 0; border: 0; border-top: 1px solid #d8d8d2; }
 </head>
 <body>
 
-<h1>Household Vault – Politika privatnosti / Privacy policy</h1>
+<h1>ManuSafe – Politika privatnosti / Privacy policy</h1>
 
 <nav>
 <a href="#hrvatski">Hrvatski</a>
@@ -55,11 +55,11 @@ hr { margin: 3rem 0 0; border: 0; border-top: 1px solid #d8d8d2; }
 
 <section id="hrvatski" lang="hr">
 
-<h2>Politika privatnosti aplikacije Household Vault</h2>
+<h2>Politika privatnosti aplikacije ManuSafe</h2>
 
 <p class="note">Ako se hrvatski i engleski tekst razlikuju, mjerodavan je engleski tekst.</p>
 
-<p class="meta">Odnosi se na Android aplikaciju Household Vault, verzija 0.1 (probne verzije). Datum: 16. rujna 2026.</p>
+<p class="meta">Odnosi se na Android aplikaciju ManuSafe, verzija 1.0 (zatvoreno testiranje). Datum: 24. listopada 2026.</p>
 
 <h2>Ukratko</h2>
 
@@ -83,19 +83,19 @@ hr { margin: 3rem 0 0; border: 0; border-top: 1px solid #d8d8d2; }
 <p>Točno ovo, i ništa više:</p>
 
 <ul>
-<li>(a) Pri prvom pokretanju Google Play usluge jednom preuzmu svoj modul za skeniranje dokumenata. To preuzimanje ide između vašeg telefona i Googlea, pod Googleovim uvjetima; aplikacija u njemu ne šalje nijedan vaš podatak.</li>
-<li>(b) Poveznice na upute i pretrage weba otvaraju se u vašem pregledniku. Proizvođač, model koji ste upisali ili skenirali i vaša IP adresa odlaze toj web-stranici ili tražilici, kao i kod svake druge web-stranice koju otvorite. Aplikacija ne upravlja time što oni s tim rade.</li>
-<li>(c) Androidova vlastita sigurnosna kopija (Auto Backup), ako ste je uključili u postavkama telefona, kopira bazu podataka i postavke aplikacije na vaš Google račun. Ta kopija uključuje tekst koji je aplikacija prepoznala na vašim računima i u uputama. Ne uključuje same datoteke računa, jamstvenih listova i uputa, ni njihove sličice, ni uvoze u tijeku: oni su izuzeti. Auto Backupom upravljate u postavkama Androida, ne u aplikaciji.</li>
-<li>(d) Ono što sami pošaljete: sigurnosna kopija koju izvezete odlazi na mjesto koje odaberete (i može biti zaštićena lozinkom koju znate samo vi), a dokument koji otvorite ili podijelite odlazi aplikaciji koju odaberete. Aplikacija ne šalje ništa sama od sebe.</li>
+<li>(a) Google Play usluge preuzmu dva svoja modula za skeniranje, svaki jednom: modul za skeniranje kodova, koji aplikacija zatraži kad se instalira s Google Playa (ili ga Play usluge preuzmu pri prvom skeniranju koda), i modul za skeniranje dokumenata, pri prvom pokretanju. Ta preuzimanja idu između vašeg telefona i Googlea, pod Googleovim uvjetima; aplikacija u njima ne šalje nijedan vaš podatak.</li>
+<li>(b) Poveznice na upute, pretrage weba i stranica s uputama ManuSafe otvaraju se u vašem pregledniku. Proizvođač, model koji ste upisali ili skenirali i vaša IP adresa odlaze toj web-stranici, tražilici ili stranici, kao i kod svake druge web-stranice koju otvorite. Aplikacija ne upravlja time što oni s tim rade.</li>
+<li>(c) Androidova vlastita sigurnosna kopija (Auto Backup), ako ste je uključili u postavkama telefona, kopira bazu podataka i postavke aplikacije na vaš Google račun. Ta kopija uključuje tekst koji je aplikacija prepoznala u svakom vašem dokumentu koji ima datoteku - kod računa čim ih skenirate, kod ostalih malo kasnije, u pozadini. Ne uključuje same datoteke računa, jamstvenih listova i uputa, ni njihove sličice, ni uvoze u tijeku: oni su izuzeti. Auto Backupom upravljate u postavkama Androida, ne u aplikaciji.</li>
+<li>(d) Ono što sami pošaljete: sigurnosna kopija koju izvezete odlazi na mjesto koje odaberete (i može biti zaštićena lozinkom koju znate samo vi); možete i jednom postaviti raspored, nakon čega pozadinski posao aplikacije zapisuje arhivu u mapu koju ste odabrali, a aplikacija tu mapu inače ne čita; lozinka zakazane kopije čuva se na ovom telefonu, zaključana spremištem ključeva, i nigdje drugdje; a dokument koji otvorite ili podijelite odlazi aplikaciji koju odaberete. Reklamacija koju pošaljete odlazi kao jedna e-poruka, s dokumentima koje ste označili, aplikaciji za e-poštu koju odaberete; aplikacija sama ništa ne šalje i ne zna je li poruka poslana. Izvješće za beta-testiranje koje kopirate iz Postavki sadrži brojeve i vremena; marku, model i adresu stranice bez dijela nakon upitnika za svake upute koje ste sami priložili; proizvođače i modele za koje aplikacija nije pronašla upute; i poveznice za koje ste javili da ne rade, svaku s proizvođačem i modelom; odlazi onamo gdje ga zalijepite. Aplikacija ne šalje ništa sama od sebe.</li>
 </ul>
 
 <h2>Google Play usluge i ML Kit</h2>
 
-<p>Prepoznavanje teksta i barkodova radi na telefonu, s modelima ugrađenima u aplikaciju. Modul skenera dolazi iz Google Play usluga (točka (a) gore). U ML Kitu je i Googleova komponenta za telemetriju; aplikacija nema dopuštenje za internet, pa ta komponenta ne može ništa poslati.</p>
+<p>Prepoznavanje teksta i barkodova radi na telefonu, s modelima ugrađenima u aplikaciju, osim skeniranja QR koda na proizvodu radi njegovih uputa, koje radi u vlastitom zaslonu Google Play usluga, na telefonu; aplikacija dobiva samo rezultat skeniranja, nikad sliku, i zadržava samo tekst koda. Googleov Code Scanner, dio Google Play usluga, može prikupljati dijagnostičke podatke, na primjer podatke o uređaju, naziv i verziju aplikacije te podatke o performansama, prema Googleovoj politici privatnosti. Moduli skenera dolaze iz Google Play usluga (točka (a) gore). U ML Kitu je i Googleova komponenta za telemetriju; aplikacija nema dopuštenje za internet, pa ta komponenta ne može ništa poslati.</p>
 
 <h2>Dopuštenja</h2>
 
-<p>Obavijesti (za podsjetnike koje postavite); biometrija, za neobavezno zaključavanje aplikacije (aplikacija nikad ne vidi vaš otisak prsta ni vaše lice, nego samo je li vas telefon potvrdio); i dva tehnička dopuštenja koja Androidov WorkManager treba da bi svakodnevno provjeravao podsjetnike i ponovno ih zakazao nakon ponovnog pokretanja telefona. Nema dopuštenja za kameru, pohranu, lokaciju, kontakte ni internet. Skener dokumenata koristi kameru kroz vlastiti zaslon i vlastito dopuštenje Google Play usluga.</p>
+<p>Obavijesti (za podsjetnike koje postavite); biometrija, za neobavezno zaključavanje aplikacije (aplikacija nikad ne vidi vaš otisak prsta ni vaše lice, nego samo je li vas telefon potvrdio); i dva tehnička dopuštenja koja Androidov WorkManager treba da bi svakodnevno provjeravao podsjetnike i ponovno ih zakazao nakon ponovnog pokretanja telefona. Nema dopuštenja za kameru, pohranu, lokaciju, kontakte ni internet. Skener dokumenata i skeniranje QR koda na proizvodu koriste kameru kroz vlastite zaslone i vlastito dopuštenje Google Play usluga.</p>
 
 <h2>Identifikatori uređaja</h2>
 
@@ -105,15 +105,19 @@ hr { margin: 3rem 0 0; border: 0; border-top: 1px solid #d8d8d2; }
 
 <p>Buduća verzija koja doda bilo koju mrežnu značajku (na primjer kupnje preko Google Playa ili uslugu za pretraživanje uputa) ažurira ovu politiku prije nego što ta verzija izađe i navodi što se promijenilo.</p>
 
+<h2>Kontakt</h2>
+
+<p>Za pitanja o ovoj politici, o unosu na Google Playu i o obrascu za testere: Matej Matković, <a href="mailto:manusafe.app@gmail.com">manusafe.app@gmail.com</a>.</p>
+
 </section>
 
 <hr>
 
 <section id="english" lang="en">
 
-<h2>Household Vault privacy policy</h2>
+<h2>ManuSafe privacy policy</h2>
 
-<p class="meta">Applies to the Android app Household Vault, version 0.1 (test builds). Dated 2026-09-16.</p>
+<p class="meta">Applies to the Android app ManuSafe, version 1.0 (closed test). Dated 2026-10-24.</p>
 
 <h2>The short version</h2>
 
@@ -137,19 +141,19 @@ hr { margin: 3rem 0 0; border: 0; border-top: 1px solid #d8d8d2; }
 <p>Exactly these, and nothing else:</p>
 
 <ul>
-<li>(a) On first start, Google Play services downloads its document-scanner module once. That download is between your phone and Google, under Google's terms; the app sends none of your data in it.</li>
-<li>(b) Manual links and web searches open in your browser. The manufacturer, the model you typed or scanned, and your IP address go to that website or search engine, as with any web page you open. The app does not control what they do with it.</li>
-<li>(c) Android's own backup (Auto Backup), if you have it enabled in your phone's settings, copies the app's database and settings to your Google account. That copy includes the text the app recognised in your receipts and manuals. It does not include the receipt, warranty or manual files themselves, nor the thumbnails, nor imports in progress: those are excluded. You control Auto Backup in Android's settings, not in the app.</li>
-<li>(d) What you send yourself: a backup you export goes to the place you choose (and can be encrypted with a passphrase only you know); a document you open or share goes to the app you pick. The app sends nothing on its own.</li>
+<li>(a) Google Play services downloads two scanner modules of its own, once each: the code-scanner module, which the app requests when it is installed from Google Play (or Play services fetches it at the first code scan), and the document-scanner module, on first start. Those downloads are between your phone and Google, under Google's terms; the app sends none of your data in them.</li>
+<li>(b) Manual links, web searches and the ManuSafe manuals page open in your browser. The manufacturer, the model you typed or scanned, and your IP address go to that website, search engine or page, as with any web page you open. The app does not control what they do with it.</li>
+<li>(c) Android's own backup (Auto Backup), if you have it enabled in your phone's settings, copies the app's database and settings to your Google account. That copy includes the text the app recognised in every document that has a file - receipts as soon as you capture them, the rest a little afterwards, in the background. It does not include the receipt, warranty or manual files themselves, nor the thumbnails, nor imports in progress: those are excluded. You control Auto Backup in Android's settings, not in the app.</li>
+<li>(d) What you send yourself: a backup you export goes to the place you choose (and can be encrypted with a passphrase only you know); you can also set a schedule once, after which the app's background job writes the archive into the folder you picked, and the app does not read that folder otherwise; the passphrase of a scheduled backup is kept on this phone, locked by the keystore, and nowhere else; a document you open or share goes to the app you pick. A claim you send goes as one e-mail, with the documents you ticked, to the mail app you choose; the app sends nothing itself and does not know whether the message was sent. The beta report you copy from Settings holds counts and timings; the brand, model and address (without anything after a question mark) of each manual you attached yourself; the manufacturers and models the app found no manual for; and the links you reported as not working, each with its manufacturer and model. It goes where you paste it. The app sends nothing on its own.</li>
 </ul>
 
 <h2>Google Play services and ML Kit</h2>
 
-<p>The text and barcode recognition run on the phone with models bundled in the app. The scanner module comes from Google Play services (point (a) above). The ML Kit libraries include a Google telemetry component; the app has no internet permission, so that component cannot send anything.</p>
+<p>The text and barcode recognition run on the phone with models bundled in the app, except the scan of the QR code on a product for its manual, which runs in Google Play services' own screen, on the phone; the app receives only the scan's result, never the image, and keeps only the code's text. Google's Code Scanner, part of Play services, may collect diagnostics such as device information, the app's name and version and performance data under Google's privacy policy. The scanner modules come from Google Play services (point (a) above). The ML Kit libraries include a Google telemetry component; the app has no internet permission, so that component cannot send anything.</p>
 
 <h2>Permissions</h2>
 
-<p>Notifications (for the reminders you set up); biometrics, for the optional app lock (the app never sees your fingerprint or face, only whether the phone confirmed you); two technical permissions Android's WorkManager needs to run the daily reminder check and reschedule it after a restart. No camera, no storage, no location, no contacts, no internet permission. The document scanner uses the camera through Google Play services' own screen and permission.</p>
+<p>Notifications (for the reminders you set up); biometrics, for the optional app lock (the app never sees your fingerprint or face, only whether the phone confirmed you); two technical permissions Android's WorkManager needs to run the daily reminder check and reschedule it after a restart. No camera, no storage, no location, no contacts, no internet permission. The document scanner and the scan of the QR code on a product use the camera through Google Play services' own screens and permission.</p>
 
 <h2>Device identifiers</h2>
 
@@ -158,6 +162,10 @@ hr { margin: 3rem 0 0; border: 0; border-top: 1px solid #d8d8d2; }
 <h2>Changes</h2>
 
 <p>A future version that adds any network feature (for example purchases through Google Play, or a manual search service) updates this policy before that version is released, and says what changed.</p>
+
+<h2>Contact</h2>
+
+<p>For questions about this policy, the Google Play listing and the testers' form: Matej Matković, <a href="mailto:manusafe.app@gmail.com">manusafe.app@gmail.com</a>.</p>
 
 </section>
 
